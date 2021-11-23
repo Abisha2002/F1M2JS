@@ -11,17 +11,20 @@
     <h1 id="kopje">museum online javascript</h1>
     <p id="mkBlauw">maak achtergrond blauw</p>
     <p id="mkGroen">maak achtergrond groen</p>
+    <p id="mkRood">maak achtergrond rood</p>
 
     <script>
         const kopje = document.getElementById("kopje");
         const mkBlauw = document.getElementById('mkBlauw');
-        const mkGroen = document.getElementById('mkGroen')
-
+        const mkGroen = document.getElementById('mkGroen');
+        const mkRood = document.getElementById('mkRood');
+        
         kopje.style.backgroundcolor = "red";
 
         kopje.addEventListener('click',voeruitKopje);
         mkBlauw.addEventListener('click',voeruitBlauw);
         mkGroen.addEventListener('click',voeruitGroen);
+        mkRood.addEventListener('click',voeruitRood);
 
         function voeruitKopje(){
             kopje.style.backgroundColor = "white";
@@ -34,6 +37,10 @@
         function voeruitGroen(){
             document.body.style.backgroundColor = "green";
         }
+        function voeruitRood(){
+            document.body.style.backgroundcolor = "red";
+        }
+
     </script>
 </body>
 </html>
