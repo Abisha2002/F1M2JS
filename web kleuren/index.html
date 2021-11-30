@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F1M2JS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="kopje">museum online javascript</h1>
+    <p id="mkBlauw">maak achtergrond blauw</p>
+    <p id="mkGroen">maak achtergrond groen</p>
+    <p id="mkRood">maak achtergrond rood</p>
+    <p id="mkOranje">maak achtergrond oranje</p>
+    <p id="mkLavender">maak achtergrond lavender</p>
+    <p id="mkAqua">maak achtergrond Aqua</p>
+    <p id="mkLichtgroen">maak achtergrond lichtgroen</p>
+    <p id="mkVuurrood">maak achtergrond vuurrood</p>
+
+    <script>
+        const kopje = document.getElementById("kopje");
+        const mkBlauw = document.getElementById('mkBlauw');
+        const mkGroen = document.getElementById('mkGroen');
+        const mkRood = document.getElementById('mkRood');
+        const mkOranje = document.getElementById('mkOranje');
+        const mkLavender = document.getElementById('mkLavender');
+        const mkAqua = document.getElementById('mkAqua');
+        const mkLichtgroen = document.getElementById('mkLichtgroen');
+        const mkVuurrood = document.getElementById('mkVuurrood');
+
+        kopje.addEventListener('click',voeruitKopje);
+        mkBlauw.addEventListener('click',voeruitBlauw);
+        mkGroen.addEventListener('click',voeruitGroen);
+        mkRood.addEventListener('click',voeruitRood);
+        mkOranje.addEventListener('click',voeruitOranje);
+        mkLavender.addEventListener('click',voeruitLavender);
+        mkAqua.addEventListener('click',voeruitAqua);
+        mkLichtgroen.addEventListener('click',voeruitLichtgroen);
+        mkVuurrood.addEventListener('click',voeruitVuurrood);
+
+        function voeruitKopje(){
+            kopje.style.backgroundColor = "white";
+            kopje.style.color = "black";
+        }
+
+        function voeruitBlauw(){
+            document.body.style.backgroundColor = "lightblue";
+        }
+        function voeruitGroen(){
+            document.body.style.backgroundColor = "green";
+        }
+        function voeruitRood(){
+            document.body.style.backgroundColor = "red";
+        }
+        function voeruitOranje(){
+            document.body.style.backgroundColor = "Orange";
+        }
+        function voeruitLavender(){
+            document.body.style.backgroundColor = "Lavender"
+        }
+        function voeruitAqua(){
+            document.body.style.backgroundColor = "Mediumaquamarine"
+        }
+        function voeruitLichtgroen(){
+            document.body.style.backgroundColor = "Mediumseagreen";
+        }
+        function voeruitVuurrood(){
+            document.body.style.backgroundColor = "Maroon";
+        }
+
+    </script>
+</body>
+</html>
