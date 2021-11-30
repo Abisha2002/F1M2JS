@@ -12,19 +12,32 @@
     <p id="mkBlauw">maak achtergrond blauw</p>
     <p id="mkGroen">maak achtergrond groen</p>
     <p id="mkRood">maak achtergrond rood</p>
+    <p id="mkOranje">maak achtergrond oranje</p>
+    <p id="mkLavender">maak achtergrond lavender</p>
+    <p id="mkAqua">maak achtergrond Aqua</p>
+    <p id="mkLichtgroen">maak achtergrond lichtgroen</p>
+    <p id="mkVuurrood">maak achtergrond vuurrood</p>
 
     <script>
         const kopje = document.getElementById("kopje");
         const mkBlauw = document.getElementById('mkBlauw');
         const mkGroen = document.getElementById('mkGroen');
         const mkRood = document.getElementById('mkRood');
-        
-        kopje.style.backgroundcolor = "red";
+        const mkOranje = document.getElementById('mkOranje');
+        const mkLavender = document.getElementById('mkLavender');
+        const mkAqua = document.getElementById('mkAqua');
+        const mkLichtgroen = document.getElementById('mkLichtgroen');
+        const mkVuurrood = document.getElementById('mkVuurrood');
 
         kopje.addEventListener('click',voeruitKopje);
         mkBlauw.addEventListener('click',voeruitBlauw);
         mkGroen.addEventListener('click',voeruitGroen);
         mkRood.addEventListener('click',voeruitRood);
+        mkOranje.addEventListener('click',voeruitOranje);
+        mkLavender.addEventListener('click',voeruitLavender);
+        mkAqua.addEventListener('click',voeruitAqua);
+        mkLichtgroen.addEventListener('click',voeruitLichtgroen);
+        mkVuurrood.addEventListener('click',voeruitVuurrood);
 
         function voeruitKopje(){
             kopje.style.backgroundColor = "white";
@@ -38,7 +51,22 @@
             document.body.style.backgroundColor = "green";
         }
         function voeruitRood(){
-            document.body.style.backgroundcolor = "red";
+            document.body.style.backgroundColor = "red";
+        }
+        function voeruitOranje(){
+            document.body.style.backgroundColor = "Orange";
+        }
+        function voeruitLavender(){
+            document.body.style.backgroundColor = "Lavender"
+        }
+        function voeruitAqua(){
+            document.body.style.backgroundColor = "Mediumaquamarine"
+        }
+        function voeruitLichtgroen(){
+            document.body.style.backgroundColor = "Mediumseagreen";
+        }
+        function voeruitVuurrood(){
+            document.body.style.backgroundColor = "Maroon";
         }
 
     </script>
